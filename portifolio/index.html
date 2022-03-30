@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    
-    <title>MegumiDavid Portifolio</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+    <title>Portifolio - MegumiDavid</title>
 </head>
 <body>
 
     <main>
         
-        <section class="header-section">
+        <section class="header-section section-padding">
             <div class="container">
-                <nav class="navbar">
+             <!--    <nav class="navbar">
                     <div class="logo">
                         MegumiDavid.
                     </div>
@@ -26,8 +27,31 @@
                           <a class="nav-link" href="#"> <span class="hlight">my skills</span></a>
                         </li>
                       </ul>
-                </nav>
-                <div class="row header-content">
+                </nav> -->
+
+                <div class="nav">
+                    <input type="checkbox" id="nav-check">
+                    <div class="nav-header">
+                      <div class="nav-title">
+                        <div class="logo">MegumiDavid.</div>
+                      </div>
+                    </div>
+                    <div class="nav-btn">
+                      <label for="nav-check">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </label>
+                    </div>
+                    
+                    <div class="nav-links">
+                      <a class="nav-link hlight" href="#my-works" >my work</a>
+                      <a class="nav-link hlight" href="#my-skills">my skills</a>
+                    </div>
+                  </div>
+
+
+                <div class="row header-content" id="header">
                     <div class="col-2-of-3">
                         <div class="text-section">
                             <h1 class="h1 mb-md">Oi, Eu sou David, Estudante
@@ -36,12 +60,10 @@
                             <p class="p header-p mb-bg">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur euismod sem eget hendrerit lacinia. Etiam at tempor purus, at rhoncus elit. Vivamus scelerisque efficitur convallis. Integer sit amet arcu in magna commodo tempus. Integer magna nibh, posuere.
                             </p>
-                            <div class="btn-section">
-                                <button class="btn">
-                                    see my work
-                                </button>
-                                <div class="btn-border"></div>
-                            </div>
+                            
+                            <a class="btn" href="#my-works">
+                                see my work
+                            </a>
                         </div>
                     </div>
                     <div class="col-1-of-3">
@@ -51,18 +73,18 @@
             </div>
         </section>
     
-        <section class="my-works-section">
+        <section class="my-works-section section-padding" id="my-works">
             <div class="container">
-                <h1 class="h1 mb-bg">My Works</h1>
+                <h1 class="h1 mb-md">My Works</h1>
                 <div class="row d-flex-wrap">
                     <div class="project-box">
-                         
+                        <a href=""><img src="img/chat-app.jpg" alt="chatapp-project" class="project-img"></a> 
                     </div>
                     <div class="project-box">
-                        <a href=""><img src="img/chat-app.jpg" alt="chatapp-project" class="project-img"></a>
+                        <a href=""><img src="img/roar-cicle.jpg" alt="chatapp-project" class="project-img"></a>
                     </div>
                     <div class="project-box">
-                        <a href=""><img src="img/chat-app.jpg" alt="chatapp-project" class="project-img"></a>
+                        <a href=""><img src="img/roar-cicle.jpg" alt="chatapp-project" class="project-img"></a>
                     </div>
                     <div class="project-box">
                         <a href=""><img src="img/chat-app.jpg" alt="chatapp-project" class="project-img"></a>
@@ -72,11 +94,11 @@
             
         </section>
     
-        <section class="my-skills-section">
+        <section class="my-skills-section section-padding" id="my-skills">
             <div class="container">
                 <div class="row align-top">
                     <div class="col-1-of-2">
-                        <h1 class="h1">My <span class="hlight">
+                        <h1 class="h1 mb-md">My <span class="hlight">
                             Skills
                         </span> </h1>
                     </div>
@@ -100,20 +122,21 @@
 
     <footer class="footer">
         <div class="container">
-            <div class="row justify-center">
-                <a href="">
-                    <div class="circle"><i class="icon fa-solid fa-envelope"></i>
+
+            <div class="footer-row row justify-center">
+                <a target="_blank" href="mailto:dvdshinjo@gmail.com" class="social-icon">
+                    <div class="circle"><i class="icon fa-solid fa-envelope"></i></div>
                 </a>
-                </div>
-                <a href="">
-                    <div class="circle"><i class="icon fa-brands fa-linkedin-in"></i>
+                
+                <a target="_blank" href="https://www.linkedin.com/in/david-shinjo/" class="social-icon">
+                    <div class="circle"><i class="icon fa-brands fa-linkedin-in"></i></div>
                 </a>
-                </div>
-                <a href="">
-                    <div class="circle"><i class="icon fa-brands fa-github"></i>
+            
+                <a target="_blank" href="https://github.com/MegumiDavid" class="social-icon">
+                    <div class="circle"><i class="icon fa-brands fa-github"></i></div>
                 </a>
-                </div>
             </div>
+
         </div>
     </footer>
 
