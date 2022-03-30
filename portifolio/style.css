@@ -120,7 +120,7 @@ a{
 /* Header Section */
 .header-section{
     background-color: var(--primary-color);
-    min-height: 50vh;
+    min-height: 45vh;
     overflow: hidden;
 }
 
@@ -132,7 +132,7 @@ a{
 .header-img{
     margin-top: 6vh;
     overflow: hidden;
-    transform: translate(90px, 80px);
+    transform: translate(90px, 55px);
     justify-content: center;
 }
 
