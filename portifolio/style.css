@@ -38,10 +38,24 @@ body{
     font-weight: 800;
 }
 
+.my-works-section h2{
+    font-family: 'Abril Fatface';
+    font-size: 4rem;
+}
+
 .h2{
     font-weight: 700;
     font-size: 2.6rem;
     margin-bottom: 2rem;
+}
+
+.h3{
+    text-transform: uppercase;
+    letter-spacing: 25%;
+    margin-bottom: .5rem;
+    font-style: bold;
+    color: #0000004d;
+    font-size: 1.4rem;
 }
 
 .p{
@@ -68,7 +82,7 @@ a{
 }
 
 .col-1-of-2{
-    width: 50%;
+    width: 45%;
 }
 
 .col-2-of-3{
@@ -89,15 +103,15 @@ a{
         );
 }
 
-
-@keyframes AnimationName {
-    0%{background-position:0% 50%}
-    100%{background-position:50% 100%}
-}
-
 .align-top{
     display: flex;
     align-items: start;
+}
+
+.align-center{
+    display: flex;
+    align-items: center;
+
 }
 
 .justify-center{
@@ -105,8 +119,7 @@ a{
 }
 
 .section-padding{
-    padding: 0 5rem;
-    padding-bottom: 5rem;
+    padding: 5rem;
 }
 
 .mb-bg{
@@ -115,7 +128,14 @@ a{
 .mb-md{
     margin-bottom: 4rem;
 }
-.mb-sm{}
+
+.pd-bg{
+    padding-bottom:10rem
+}
+
+.pd-md{
+    padding: 8rem;
+}
 
 /* Header Section */
 .header-section{
@@ -140,14 +160,47 @@ a{
     animation: moveBottomToCenter 1s;
 }
 
-/*  Navbar */
-/* .navbar{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 2rem;
-} */
+.header-project{
+    align-items: center;    
+}
 
+
+.visit-site{
+    text-decoration: none;
+    color: inherit;
+    font-weight: 700;
+    font-size: inherit;
+}
+
+.visit-site{
+    transform: scale(1.03);
+    transition: transform .5s;
+}
+
+.project-show-section{
+    text-align: center;
+    margin: 0 auto;
+    padding: 6rem 0;
+}
+
+.project-show-img{
+    width: 100%;
+}
+
+.project-text{
+    padding-top: 5.5rem;
+    text-align: center;
+    max-width: 60vw;
+    margin: 0 auto;
+}
+
+
+.primary-bg{
+    background-color: var(--primary-color);
+}
+
+
+/*  Navbar */
 .logo{
     font-family: 'Mulish', sans-serif;
     font-weight: 900;
@@ -164,71 +217,50 @@ a{
     transform: scale(1.03);
     transition: transform .5s;
 }
-/* .nav-items{
-    list-style: none;
-    display: flex;
+
+  
+.nav {
+height: 50px;
+width: 100%;
+background-color: transparent;
+position: relative;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.nav > .nav-header {
+display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+display: inline-block;
+font-size: 22px;
+color: rgb(0, 0, 0);
+padding: 10px 10px 10px 10px;
+}
+
+.nav > .nav-btn {
+display: none;
+}
+
+.nav > .nav-links {
+display: inline;
+float: right;
+font-size: 18px;
+}
+
+.nav > .nav-links > a {
+display: inline-block;
+/* padding: 13px 10px 13px 10px; */
+text-decoration: none;
+color: #000000;
 }
 
 
-
-.nav-link:last-child{
-    margin-left: 5rem;
-} */
-
-* {
-    box-sizing: border-box;
-  }
-  
-  body {
-    margin: 0px;
-    font-family: 'segoe ui';
-  }
-  
-  .nav {
-    height: 50px;
-    width: 100%;
-    background-color: transparent;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .nav > .nav-header {
-    display: inline;
-  }
-  
-  .nav > .nav-header > .nav-title {
-    display: inline-block;
-    font-size: 22px;
-    color: rgb(0, 0, 0);
-    padding: 10px 10px 10px 10px;
-  }
-  
-  .nav > .nav-btn {
-    display: none;
-  }
-  
-  .nav > .nav-links {
-    display: inline;
-    float: right;
-    font-size: 18px;
-  }
-  
-  .nav > .nav-links > a {
-    display: inline-block;
-    /* padding: 13px 10px 13px 10px; */
-    text-decoration: none;
-    color: #000000;
-  }
-  
-/*   .nav > .nav-links > a:hover {
-    background-color: #F9EFE7;
-  } */
-  
-  .nav > #nav-check {
-    display: none;
-  }
+.nav > #nav-check {
+display: none;
+}
   
   @media (max-width:650px) {
     .nav > .nav-btn {
@@ -286,28 +318,33 @@ a{
 
 
 
-
-
-
-
-
-
-
-
-
-
 /* My Works Section */
 .my-works-section{
     margin-top: 6rem;
 }
 
-.project-box{
-    width: 45%;
-/*     margin-bottom: 7rem; */
+.tag-section{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 4rem;
 }
 
-.project-box:not(:last-child){
+.tag{
+    background-color: var(--primary-color);
+    font-weight: 700;
+    font-size: 1.3rem;
+    padding: .5rem 1rem;
+
+}
+
+.tag:not(:first-child){
+    margin-left: 1rem;
+}
+
+.project-box{
+    width: 45%;
     margin-bottom: 7rem;
+/*     margin-bottom: 7rem; */
 }
 
 .project-box:hover{
@@ -320,15 +357,13 @@ a{
     height: auto;
 }
 
-
-.project-box a{
-    cursor: pointer;
+.project-img:hover{
+    transform: scale(1.03);
+    box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.2);
+    transition: all 1s;
 }
 
 /* Btn Component */
-.btn-section{
-    position: relative;
-}
 
 .btn{
     background-color: black;
@@ -357,7 +392,9 @@ a{
 
 /* Footer Section */
 .footer{
-    padding: 6rem;
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+    text-align: center;
 }
 
 .icons{
@@ -385,6 +422,10 @@ a{
     width: 5.5rem;
     height: 5.5rem;
     margin-top: 1rem;
+}
+
+.social-icon{
+    margin-bottom: 3rem;
 }
 
 .social-icon:nth-child(2){
@@ -436,14 +477,11 @@ a{
     }
 
     .header-img{
-
         transform: translate(10px, 80px);
     }
 }
 
-@media(max-width:720px){
-    /* Grid */
-    
+@media(max-width:800px){
     .footer-row.row{
         flex-direction: row;
     }
@@ -468,39 +506,98 @@ a{
         margin-right:2rem;
         margin-left:2rem;
     }
+
+    .section-padding{
+        padding: 5rem;
+        padding-bottom: 10rem;
+    }
+
+    .pd-bg{
+        padding: 5rem;
+    }
 }
 
 /* Burger Menu*/
 @media(max-width:600px){
     html{
-        font-size: 50%; 
+        font-size: 60%; 
     }
-
+    
     .header-content{
         margin-top: 3vh;
     }
-
+    
     .section-padding{
-        padding: 0 5rem;
-        padding-bottom: 5rem;
+        padding: 5rem;
+        padding-bottom: 10rem;
     }
+    
+    body{
+        padding: 0rem;
+    }
+    
+    .my-skills-section{
+        padding: 8rem;
+    }
+
+    .pd-bg{
+        padding: 3rem;
+    }
+
+    .circle{
+        width:  40px;
+        height: 40px;
+    }
+
+    .icon{
+        font-size: 2rem;
+    }
+
+    .btn{
+        padding: 1.8rem 2.8rem;
+        font-size: 1.4rem;
+    }
+    
 }
 
+@media(max-width:400px){
+    html{
+        font-size: 50%; 
+    }
+    
+    .header-content{
+        margin-top: 3vh;
+    }
+    
+    .section-padding{
+        padding: 3rem;
+        padding-bottom: 8rem;
+    }
+    
+    body{
+        padding: 0rem;
+    }
+    
+    .my-skills-section{
+        padding: 8rem;
+    }
 
+    .pd-bg{
+        padding: 3rem;
+    }
 
-  
+    .circle{
+        width:  40px;
+        height: 40px;
+    }
 
+    .icon{
+        font-size: 2rem;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+    .btn{
+        padding: 1.8rem 2.8rem;
+        font-size: 1.4rem;
+    }
+    
+}
