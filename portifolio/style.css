@@ -165,7 +165,7 @@ a{
 }
 
 
-.visit-site{
+/* .visit-site{
     text-decoration: none;
     color: inherit;
     font-weight: 700;
@@ -175,9 +175,9 @@ a{
 .visit-site{
     transform: scale(1.03);
     transition: transform .5s;
-}
+} */
 
-.project-show-section{
+/* .project-show-section{
     text-align: center;
     margin: 0 auto;
     padding: 6rem 0;
@@ -192,7 +192,7 @@ a{
     text-align: center;
     max-width: 60vw;
     margin: 0 auto;
-}
+} */
 
 
 .primary-bg{
